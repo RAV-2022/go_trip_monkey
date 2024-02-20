@@ -32,7 +32,13 @@ body {
 .header {
     position: relative;
     min-height: 940px;
+    padding-top: 44px;
     background: linear-gradient(132.05deg, #428E5F -17.38%, #112120 78.4%), #204434;
+    color: #fff;
+}
+
+.header a {
+    color: #fff;
 }
 
 .header::after {
@@ -45,4 +51,45 @@ body {
 
     background-image: url(./../img/header/header-bottom.svg);
     background-size: 100%;
+}
+
+.header__top {
+    margin-bottom: 86px;
+}
+
+.header__content {
+    max-width: 592px;
+}
+
+/* NAV */
+
+.nav {
+    display: flex;
+    justify-content: space-between;
+    column-gap: 80px;
+}
+
+.nav__logo {
+    
+}
+
+.nav__list {
+    display: flex;
+    column-gap: 80px;
+}
+
+.nav__login {
+
+}
+
+/* Logo */
+
+.logo {
+    font-size: 20px;
+    color: #fff;
+    font-weight: 700;
+}
+
+.logo a {
+    color: inherit;
 }
