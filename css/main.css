@@ -30,6 +30,7 @@ body {
 /* Header */
 
 .header {
+    overflow: hidden;
     position: relative;
     min-height: 940px;
     padding-top: 44px;
@@ -57,9 +58,29 @@ body {
     margin-bottom: 86px;
 }
 
+.header__row {
+    display: flex;
+}
+
 .header__content {
     max-width: 592px;
 }
+
+.header__img {
+    position: relative;
+    flex-grow: 1;
+}
+
+.header__img img {
+    position: absolute;
+    top: -181;
+    right: -87;
+
+    max-width: unset;
+    width: 894px;
+    height: 940px;
+}
+
 
 /* NAV */
 
@@ -99,6 +120,7 @@ body {
 
 .nav__login {
     display: flex;
+    align-items: center;
     column-gap: 25px;
 
     font-size: 15px;
@@ -125,8 +147,68 @@ body {
 
     font-size: 15px;
     font-weight: 500;
+    color: #fff;
     
     background: linear-gradient(129.54deg, #FF7B4E 15.57%, #FF584E 95.03%), #FFFFFF;
     border-radius: 100px;
 
 }
+
+.btn:hover {
+    color: rgb(245, 233, 127);
+    transition: color 0.2s ease-in;
+
+}
+
+.btn:active {
+    position: relative;
+    top: 1px;
+}
+
+/* Header content */
+
+.header__badge {
+    display: inline-block;
+    padding: 11px 30px;
+    margin-bottom: 7px;
+    font-size: 18px;
+    font-weight: 500;
+
+    background: rgba(255, 255, 255, 0.25);
+    border-radius: 15px;
+}
+
+.header__title {
+    margin-bottom: 30px;
+    font-size: 55px;
+}
+
+.header__text {
+    margin-bottom: 68px;
+    font-size: 25px;
+    font-weight: 700;
+    color: rgba(255, 255, 255, 0.5);
+}
+
+.header__btn {
+    display: inline-block;
+    padding: 27px 48px;
+
+    font-size: 25px;
+    font-weight: 600;
+        
+    background: linear-gradient(129.54deg, #FF7B4E 15.57%, #FF584E 95.03%), #FFFFFF;
+    border-radius: 27px;
+}
+
+.header__btn:hover {
+    color: rgb(245, 233, 127);
+    transition: color 0.2s ease-in;
+
+}
+
+.header__btn:active {
+    position: relative;
+    top: 1px;
+}
+
