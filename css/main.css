@@ -63,6 +63,8 @@ body {
 }
 
 .header__content {
+    position: relative;
+    z-index: 1;
     max-width: 592px;
 }
 
@@ -73,8 +75,8 @@ body {
 
 .header__img img {
     position: absolute;
-    top: -181;
-    right: -87;
+    top: -181px;
+    right: -87px;
 
     max-width: unset;
     width: 894px;
