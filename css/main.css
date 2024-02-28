@@ -214,3 +214,19 @@ body {
     top: 1px;
 }
 
+/* Destinations */
+
+.destinations {
+    padding: 96px 0 100px;
+}
+
+.destinations__row {
+    display: flex;
+    column-gap: 50px;
+}
+.destinations__content {
+    max-width: 456px;
+}
+.destinations__slider {
+    width: 1100px;
+}
